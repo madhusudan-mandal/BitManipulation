@@ -8,7 +8,7 @@ public class BinaryToHexadecimal {
 		String binary = "010111";
 		
 		// First convert it to Decimal
-		Long decimal = BinaryToDecimal.binaryToDecimal(binary);
+		Long decimal = BinaryToDecimal.binaryToDecimal(binary);	//using the existing method already created by me
 		
 		// Convert decimal to hexadecimal by dividing the decimal by 16 until decimal is not zero
 		// save the reminder in array
