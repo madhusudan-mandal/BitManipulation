@@ -21,7 +21,13 @@ public class BinaryToHexadecimal {
 		}
 		for(int j=i-1;j>=0;j--)
 		{
-			
+			if(reminder[j]<=9)
+			{
+				System.out.print(reminder[j]);
+			}
+			else{
+				System.out.print((char)(reminder[j]+55));
+			}
 		}
 	}
 
