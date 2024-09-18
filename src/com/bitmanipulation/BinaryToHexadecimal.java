@@ -16,7 +16,7 @@ public class BinaryToHexadecimal {
 		int i=0;
 		while(decimal!=0)
 		{
-			reminder[i++]=(int)(decimal/16);
+			reminder[i++]=(int)(decimal%16);
 			decimal /= 16;
 		}
 		for(int j=i-1;j>=0;j--)
@@ -26,7 +26,10 @@ public class BinaryToHexadecimal {
 				System.out.print(reminder[j]);
 			}
 			else{
-				System.out.print((char)(reminder[j]+55));
+				System.out.print((char)(reminder[j]+55)); // adding 55 to 10 will give 65 which is a character value of 10
+
+				//similary 55+11 give 66 ascii value of B
+				//Check ASCII table
 			}
 		}
 	}
